@@ -5,24 +5,35 @@ using System.Text;
 using System.Threading.Tasks;
 using DucksClasses;
 
-namespace McDucky
+namespace McDuck
 {
-    public class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            MallardDuck Ducky = new MallardDuck();
-            RedheadDuck Duckk = new RedheadDuck();
+            MallardDuck Miles = new MallardDuck();
+            RedheadDuck Raily = new RedheadDuck();
+            RubberDuck Ruby = new RubberDuck();
+            DecoyDuck Deccart = new DecoyDuck();
 
-            Duck[] ducks = new Duck[] { Ducky, Duckk };
+            Duck[] ducks = new Duck[] { Miles, Raily, Ruby, Deccart };
 
-            for (int i = 0; i<ducks.Length; i++)
+            for (int i = 0; i < ducks.Length; i++)
             {
-                Console.WriteLine(ducks[i].Quack());
+                if (ducks[i] is IQuackable)
+                {
+                    Console.WriteLine((ducks[i] as IQuackable).Quack());
+                }
+                if (ducks[i] is IFlyable)
+                {
+                    Console.WriteLine((ducks[i] as IFlyable).Fly());
+                }
+                
                 Console.WriteLine(ducks[i].Swim());
-                Console.WriteLine(ducks[i].Display() + $"\n");
+                Console.WriteLine(ducks[i].Display());
                 Console.ReadLine();
-            }   
+            }
+            
         }
     }
 }
