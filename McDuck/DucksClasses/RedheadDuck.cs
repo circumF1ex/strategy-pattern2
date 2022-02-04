@@ -3,19 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using flyable;
+using quackable;
 
 namespace DucksClasses
 {
-    public class RedheadDuck : Duck, IQuackable, IFlyable
+    public class RedheadDuck : Duck
     {
-        public string Quack()
-        {
-            return Convert.ToString($"*quack-quack*\t" + this.GetType());
-        }
-        public string Fly()
-        {
-            return Convert.ToString($"*swish-swish*\t" + this.GetType());
-        }
+        protected IQuackable quackable = new normalQuack();
+        protected IFlyable flyable = new FlyWithWings();
         public override Type Display()
         {
             return this.GetType();

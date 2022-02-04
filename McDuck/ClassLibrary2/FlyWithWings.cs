@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FlyBehavior
+namespace flyable
 {
     public class FlyWithWings: IFlyable
     {

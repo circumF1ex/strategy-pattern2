@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DucksClasses</RootNamespace>
     <AssemblyName>DucksClasses</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -68,13 +69,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\QuackBehavior.csproj">
+    <ProjectReference Include="..\ClassLibrary1\quackable.csproj">
       <Project>{75f45af5-d05e-46c2-a7c7-7679fb492f7d}</Project>
-      <Name>QuackBehavior</Name>
+      <Name>quackable</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ClassLibrary2\FlyBehavior.csproj">
+    <ProjectReference Include="..\ClassLibrary2\flyable.csproj">
       <Project>{1ad96fac-de76-4d29-82de-ada8a0a907a7}</Project>
-      <Name>FlyBehavior</Name>
+      <Name>flyable</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

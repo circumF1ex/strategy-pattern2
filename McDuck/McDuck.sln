@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2019
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McDuck", "McDuck\McDuck.csproj", "{BCA4CDC7-948C-4D50-9A29-C1260259B3B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DucksClasses", "DucksClasses\DucksClasses.csproj", "{ACEEC807-32D5-45C2-B7B0-A1FB0D020C35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuackBehavior", "ClassLibrary1\QuackBehavior.csproj", "{75F45AF5-D05E-46C2-A7C7-7679FB492F7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quackable", "ClassLibrary1\quackable.csproj", "{75F45AF5-D05E-46C2-A7C7-7679FB492F7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBehavior", "ClassLibrary2\FlyBehavior.csproj", "{1AD96FAC-DE76-4D29-82DE-ADA8A0A907A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "flyable", "ClassLibrary2\flyable.csproj", "{1AD96FAC-DE76-4D29-82DE-ADA8A0A907A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

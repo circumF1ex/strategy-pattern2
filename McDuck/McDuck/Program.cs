@@ -20,18 +20,11 @@ namespace McDuck
 
             for (int i = 0; i < ducks.Length; i++)
             {
-                if (ducks[i] is IQuackable)
-                {
-                    Console.WriteLine((ducks[i] as IQuackable).Quack());
-                }
-                if (ducks[i] is IFlyable)
-                {
-                    Console.WriteLine((ducks[i] as IFlyable).Fly());
-                }
-                
-                Console.WriteLine(ducks[i].Swim());
-                Console.WriteLine(ducks[i].Display());
-                Console.ReadLine();
+                ducks[i].PerformFly();
+                ducks[i].PerformQuack();
+                ducks[i].Swim();
+                ducks[i].Display();
+                Console.ReadKey();
             }
             
         }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FlyBehavior
+namespace flyable
 {
-    class Class1: IFlyable
+    public class FlyNoWay: IFlyable
     {
         public string Fly()
         {

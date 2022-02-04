@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuackBehavior
+namespace quackable
 {
     public class MuteQuack: IQuackable
     {
