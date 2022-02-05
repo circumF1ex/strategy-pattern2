@@ -10,8 +10,12 @@ namespace DucksClasses
 {
     public class MallardDuck : Duck
     {
-        protected IQuackable quackable = new normalQuack();
-        protected IFlyable flyable = new FlyWithWings();
+        public MallardDuck()    
+        { 
+            quackBehavior = new normalQuack();
+            flyBehavior = new FlyWithWings(); 
+        }
+        
         public override Type Display()
         {
             return this.GetType();

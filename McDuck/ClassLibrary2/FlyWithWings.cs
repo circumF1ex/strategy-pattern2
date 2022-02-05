@@ -10,7 +10,7 @@ namespace flyable
     {
         public string Fly()
         {
-            return "Хлоп-хлоп-Хлоп" + this.GetType();
+            return "Хлоп-хлоп-Хлоп";
         }
     }
 }

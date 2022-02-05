@@ -10,8 +10,12 @@ namespace DucksClasses
 {
     public class DecoyDuck : Duck
     {
-        protected IQuackable quackable = new MuteQuack();
-        protected IFlyable flyable = new FlyNoWay();
+        public DecoyDuck()
+        {
+            quackBehavior = new MuteQuack();
+            flyBehavior = new FlyNoWay();
+        }
+        
         public override Type Display()
         {
             return this.GetType();

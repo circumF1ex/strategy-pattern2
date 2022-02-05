@@ -10,8 +10,12 @@ namespace DucksClasses
 {
     public class RubberDuck : Duck
     {
-        protected IQuackable quackable = new Squeak();
-        protected IFlyable flyable = new FlyNoWay();
+        public RubberDuck()
+        {
+            quackBehavior = new Squeak();
+            flyBehavior = new FlyNoWay();
+        }
+        
         public override Type Display()
         {
             return this.GetType();

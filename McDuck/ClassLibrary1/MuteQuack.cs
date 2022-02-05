@@ -10,7 +10,7 @@ namespace quackable
     {
         public string Quack()
         {
-            return "" + this.GetType();
+            return "";
         }
     }
 }

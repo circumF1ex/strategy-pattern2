@@ -19,14 +19,14 @@ namespace DucksClasses
         }
         public abstract Type Display();
         
-        public void PerformFly()
-        {
-            flyBehavior.Fly();
+        public string PerformFly()
+        {      
+            return flyBehavior.Fly();
         }
 
-        public void PerformQuack()
+        public string PerformQuack()
         {
-            quackBehavior.Quack(); 
+            return quackBehavior.Quack();
         }
         public void setFlyBeahvior(IFlyable fb)
         {
