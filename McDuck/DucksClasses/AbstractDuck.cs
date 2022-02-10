@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using quackable;
-using flyable;
+using DucksClasses;
 
 namespace DucksClasses
 {
@@ -17,7 +16,7 @@ namespace DucksClasses
         {
             return "*Даже утка-мишень может плавать, буль-буль!!!!*" + this.GetType();
         }
-        public abstract Type Display();
+        public abstract string Display();
         
         public string PerformFly()
         {      

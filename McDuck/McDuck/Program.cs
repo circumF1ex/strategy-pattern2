@@ -17,16 +17,29 @@ namespace McDuck
             DecoyDuck Deccart = new DecoyDuck();
 
             Duck[] ducks = new Duck[] { Miles, Raily, Ruby, Deccart };
-
-            for (int i = 0; i < ducks.Length; i++)
+            firstloop();
+            //destructall();
+            //firstloop();
+            void firstloop()
             {
-                Console.WriteLine(ducks[i].PerformFly());
-                Console.WriteLine(ducks[i].PerformQuack());
-                Console.WriteLine(ducks[i].Swim());
-                Console.WriteLine(ducks[i].Display());
-                Console.WriteLine("input something to continue");
-                Console.ReadLine();
+                for (int i = 0; i < ducks.Length; i++)
+                {
+                    Console.WriteLine(ducks[i].PerformFly());
+                    Console.WriteLine(ducks[i].PerformQuack());
+                    Console.WriteLine(ducks[i].Swim());
+                    Console.WriteLine(ducks[i].Display());
+                    Console.WriteLine("input something to continue");
+                    Console.ReadLine();
+                }
             }
+            //void destructall()
+            //{
+            //    for (int i = 0; i < ducks.Length; i++)
+            //    {
+            //        ducks[i].setFlyBeahvior(ducks[i]);
+            //        ducks[i].setQuackBehavior();
+            //    }
+            //}
             
         }
     }

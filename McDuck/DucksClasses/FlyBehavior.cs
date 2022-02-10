@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace quackable
+namespace DucksClasses
 {
-    public interface IQuackable
+    public interface IFlyable
     {
-        string Quack();
+        string Fly();
     }
 }
