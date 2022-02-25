@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace flyable
+namespace DucksClasses
 {
-    public class FlyWithWings: IFlyable
+    public class FlyNoWay: IFlyable
     {
         public string Fly()
         {
-            return "Хлоп-хлоп-Хлоп";
+            return "";
         }
     }
 }

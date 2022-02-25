@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DucksClasses</RootNamespace>
     <AssemblyName>DucksClasses</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -62,21 +62,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractDuck.cs" />
+    <Compile Include="FlyBehavior.cs" />
+    <Compile Include="FlyNoWay.cs" />
+    <Compile Include="FlyWithWings.cs" />
     <Compile Include="MallardDuck.cs" />
     <Compile Include="DecoyDuck.cs" />
+    <Compile Include="MuteQuack.cs" />
+    <Compile Include="NormalQuack.cs" />
+    <Compile Include="QuackBehavior.cs" />
     <Compile Include="RubberDuck.cs" />
     <Compile Include="RedheadDuck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\quackable.csproj">
-      <Project>{75f45af5-d05e-46c2-a7c7-7679fb492f7d}</Project>
-      <Name>quackable</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ClassLibrary2\flyable.csproj">
-      <Project>{1ad96fac-de76-4d29-82de-ada8a0a907a7}</Project>
-      <Name>flyable</Name>
-    </ProjectReference>
+    <Compile Include="Squeak.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

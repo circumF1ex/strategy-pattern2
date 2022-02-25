@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace quackable
+namespace DucksClasses
 {
-    public class Squeak: IQuackable
+    public class normalQuack: IQuackable
     {
         public string Quack()
         {
-            return "Квик-квик";
+            return "Кря-кря";
         }
     }
 }

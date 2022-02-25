@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using flyable;
-using quackable;
+using DucksClasses;
 
 namespace DucksClasses
 {
@@ -15,10 +14,10 @@ namespace DucksClasses
             quackBehavior = new Squeak();
             flyBehavior = new FlyNoWay();
         }
-        
-        public override Type Display()
+
+        public override string Display()
         {
-            return this.GetType();
+            return ($"{this.GetType()} - {quackBehavior.GetType()} - {flyBehavior.GetType()}");
         }
     }
 }
