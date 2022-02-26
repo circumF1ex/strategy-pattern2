@@ -15,9 +15,9 @@ namespace DucksClasses
             flyBehavior = new FlyNoWay();
         }
 
-        public override string Display()
-        {
-            return ($"{this.GetType()} - {quackBehavior.GetType()} - {flyBehavior.GetType()}");
-        }
+        //public override string Display()
+        //{
+        //    return ($"{this.GetType()} - {quackBehavior.GetType()} - {flyBehavior.GetType()}");
+        //}
     }
 }
