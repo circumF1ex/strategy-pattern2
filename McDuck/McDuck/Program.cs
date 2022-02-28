@@ -15,11 +15,11 @@ namespace McDuck
             RedheadDuck Raily = new RedheadDuck();
             RubberDuck Ruby = new RubberDuck();
             DecoyDuck Deccart = new DecoyDuck();
-           // Miles.setFlyBehavior();
+            
             Duck[] ducks = new Duck[] { Miles, Raily, Ruby, Deccart };
             firstloop();
-            //destructall();
-            //firstloop();
+            destructall();
+            firstloop();
             void firstloop()
             {
                 for (int i = 0; i < ducks.Length; i++)
@@ -28,18 +28,19 @@ namespace McDuck
                     Console.WriteLine(ducks[i].PerformQuack());
                     Console.WriteLine(ducks[i].Swim());
                     Console.WriteLine(ducks[i].Display());
-                    Console.WriteLine("input something to continue");
-                    Console.ReadLine();
-                    Console.Clear();
+                    Console.WriteLine($"input something to continue\n");                            
+                }
+                Console.ReadLine();
+                Console.Clear();
+            }
+            void destructall()
+            {
+                for (int i = 0; i < ducks.Length; i++)
+                {
+                    ducks[i].setQuackBehavior(new MuteQuack());
+                    ducks[i].setFlyBehavior(new FlyNoWay());
                 }
             }
-            //void destructall()
-            //{
-            //    for (int i = 0; i < ducks.Length; i++)
-            //    {
-            //        ducks[i].setFlyBehavior();
-            //    }
-            //}
 
         }
     }

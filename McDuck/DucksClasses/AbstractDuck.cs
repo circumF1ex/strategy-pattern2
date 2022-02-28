@@ -9,9 +9,8 @@ namespace DucksClasses
 {
     public abstract class Duck
     {
-        public IQuackable quackBehavior;
+        public IQuackable quackBehavior; 
         public IFlyable flyBehavior;
-        
         public string Swim()
         {
             return "*Даже утка-мишень может плавать, буль-буль!!!!*" + this.GetType();
@@ -30,8 +29,14 @@ namespace DucksClasses
         {
             return quackBehavior.Quack();
         }
-        public class set
+        public void setQuackBehavior(IQuackable quackable)
         {
+            this.quackBehavior = quackable;
+
+        }
+        public void setFlyBehavior(IFlyable flyable)
+        {
+            this.flyBehavior = flyable;
 
         }
 
